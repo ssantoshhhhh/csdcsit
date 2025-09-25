@@ -1,0 +1,404 @@
+/**
+ * SRKR CSD & CSIT Typography Standards
+ * Consistent font styles and sizes across all pages
+ * Based on the placements.php design patterns
+ */
+
+/* Import Poppins font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    /* Font Family */
+    --font-primary: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    
+    /* Font Weights */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+    --fw-black: 900;
+    
+    /* Font Sizes */
+    --fs-hero: 4rem;        /* 64px - Main hero titles */
+    --fs-h1: 2.8rem;        /* 44.8px - Primary section headings */
+    --fs-h2: 2.2rem;        /* 35.2px - Secondary headings */
+    --fs-h3: 1.8rem;        /* 28.8px - Sub-headings */
+    --fs-h4: 1.5rem;        /* 24px - Card titles */
+    --fs-h5: 1.25rem;       /* 20px - Small headings */
+    --fs-h6: 1.1rem;        /* 17.6px - Minor headings */
+    --fs-body-large: 1.2rem; /* 19.2px - Large body text */
+    --fs-body: 1rem;        /* 16px - Default body text */
+    --fs-body-small: 0.9rem; /* 14.4px - Small body text */
+    --fs-caption: 0.8rem;   /* 12.8px - Captions and labels */
+    --fs-tiny: 0.7rem;      /* 11.2px - Very small text */
+    
+    /* Line Heights */
+    --lh-tight: 1.1;
+    --lh-snug: 1.2;
+    --lh-normal: 1.5;
+    --lh-relaxed: 1.6;
+    --lh-loose: 1.8;
+    
+    /* Colors for typography */
+    --color-text-primary: #1e293b;
+    --color-text-secondary: #64748b;
+    --color-text-light: #94a3b8;
+    --color-accent: #3b82f6;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-error: #ef4444;
+}
+
+/* Base Typography Reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--fs-body);
+    line-height: var(--lh-normal);
+    color: var(--color-text-primary);
+    font-weight: var(--fw-regular);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Heading Styles - Consistent with placements.php pattern */
+.hero-title,
+.page-hero-title {
+    font-size: var(--fs-hero);
+    font-weight: var(--fw-black);
+    line-height: var(--lh-tight);
+    margin-bottom: 20px;
+    color: var(--color-text-primary);
+}
+
+.section-title-large,
+h1.large {
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-extrabold);
+    line-height: var(--lh-tight);
+    margin-bottom: 15px;
+    color: var(--color-text-primary);
+}
+
+.section-title,
+h2.section-heading {
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-snug);
+    margin-bottom: 15px;
+    color: var(--color-text-primary);
+}
+
+.sub-heading,
+h3.sub-title {
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-snug);
+    margin-bottom: 12px;
+    color: var(--color-text-primary);
+}
+
+.card-title,
+h4.card-heading {
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-snug);
+    margin-bottom: 10px;
+    color: var(--color-text-primary);
+}
+
+.small-heading,
+h5.minor-title {
+    font-size: var(--fs-h5);
+    font-weight: var(--fw-medium);
+    line-height: var(--lh-snug);
+    margin-bottom: 8px;
+    color: var(--color-text-primary);
+}
+
+.micro-heading,
+h6.tiny-title {
+    font-size: var(--fs-h6);
+    font-weight: var(--fw-medium);
+    line-height: var(--lh-snug);
+    margin-bottom: 6px;
+    color: var(--color-text-primary);
+}
+
+/* Body Text Styles */
+.text-large,
+.lead-text {
+    font-size: var(--fs-body-large);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-relaxed);
+    color: var(--color-text-primary);
+}
+
+.text-body,
+p {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-normal);
+    color: var(--color-text-secondary);
+    margin-bottom: 16px;
+}
+
+.text-small {
+    font-size: var(--fs-body-small);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-normal);
+    color: var(--color-text-secondary);
+}
+
+.text-caption {
+    font-size: var(--fs-caption);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-normal);
+    color: var(--color-text-light);
+}
+
+.text-tiny {
+    font-size: var(--fs-tiny);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-normal);
+    color: var(--color-text-light);
+}
+
+/* Standard HTML Elements */
+h1 {
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-extrabold);
+    line-height: var(--lh-tight);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-snug);
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-snug);
+    margin-bottom: 14px;
+}
+
+h4 {
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-snug);
+    margin-bottom: 12px;
+}
+
+h5 {
+    font-size: var(--fs-h5);
+    font-weight: var(--fw-medium);
+    line-height: var(--lh-snug);
+    margin-bottom: 10px;
+}
+
+h6 {
+    font-size: var(--fs-h6);
+    font-weight: var(--fw-medium);
+    line-height: var(--lh-snug);
+    margin-bottom: 8px;
+}
+
+/* Utility Classes */
+.font-weight-light { font-weight: var(--fw-light); }
+.font-weight-regular { font-weight: var(--fw-regular); }
+.font-weight-medium { font-weight: var(--fw-medium); }
+.font-weight-semibold { font-weight: var(--fw-semibold); }
+.font-weight-bold { font-weight: var(--fw-bold); }
+.font-weight-extrabold { font-weight: var(--fw-extrabold); }
+.font-weight-black { font-weight: var(--fw-black); }
+
+.line-height-tight { line-height: var(--lh-tight); }
+.line-height-snug { line-height: var(--lh-snug); }
+.line-height-normal { line-height: var(--lh-normal); }
+.line-height-relaxed { line-height: var(--lh-relaxed); }
+.line-height-loose { line-height: var(--lh-loose); }
+
+.text-primary { color: var(--color-text-primary); }
+.text-secondary { color: var(--color-text-secondary); }
+.text-light { color: var(--color-text-light); }
+.text-accent { color: var(--color-accent); }
+.text-success { color: var(--color-success); }
+.text-warning { color: var(--color-warning); }
+.text-error { color: var(--color-error); }
+
+/* Special Styling for Highlighted Text (like in placements.php) */
+.text-highlight {
+    color: var(--color-accent);
+    font-weight: var(--fw-bold);
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, var(--color-accent), var(--color-success));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: var(--fw-bold);
+}
+
+/* Section Descriptions (like in placements.php) */
+.section-description {
+    font-size: var(--fs-body-large);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-relaxed);
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Page Headers (consistent with placements.php style) */
+.page-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.page-header .title {
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-extrabold);
+    line-height: var(--lh-tight);
+    margin-bottom: 15px;
+    color: var(--color-text-primary);
+}
+
+.page-header .description {
+    font-size: var(--fs-body-large);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-relaxed);
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Card Typography */
+.card-header-title {
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-semibold);
+    margin-bottom: 8px;
+    color: var(--color-text-primary);
+}
+
+.card-subtitle {
+    font-size: var(--fs-body-small);
+    font-weight: var(--fw-medium);
+    color: var(--color-text-light);
+    margin-bottom: 12px;
+}
+
+.card-text {
+    font-size: var(--fs-body-small);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-normal);
+    color: var(--color-text-secondary);
+}
+
+/* Button Typography */
+.btn {
+    font-family: var(--font-primary);
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-body-small);
+    line-height: var(--lh-normal);
+}
+
+.btn-large {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-semibold);
+}
+
+.btn-small {
+    font-size: var(--fs-caption);
+    font-weight: var(--fw-medium);
+}
+
+/* Form Typography */
+label {
+    font-size: var(--fs-body-small);
+    font-weight: var(--fw-medium);
+    color: var(--color-text-primary);
+    margin-bottom: 4px;
+}
+
+input, textarea, select {
+    font-family: var(--font-primary);
+    font-size: var(--fs-body-small);
+    line-height: var(--lh-normal);
+}
+
+/* List Typography */
+ul, ol {
+    font-size: var(--fs-body-small);
+    line-height: var(--lh-normal);
+    color: var(--color-text-secondary);
+}
+
+/* Link Typography */
+a {
+    font-weight: var(--fw-medium);
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Typography */
+@media (max-width: 1200px) {
+    :root {
+        --fs-hero: 3.5rem;
+        --fs-h1: 2.5rem;
+        --fs-h2: 2rem;
+        --fs-h3: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --fs-hero: 2.8rem;
+        --fs-h1: 2.2rem;
+        --fs-h2: 1.8rem;
+        --fs-h3: 1.4rem;
+        --fs-h4: 1.3rem;
+        --fs-body-large: 1.1rem;
+        --fs-body: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --fs-hero: 2.2rem;
+        --fs-h1: 1.8rem;
+        --fs-h2: 1.5rem;
+        --fs-h3: 1.3rem;
+        --fs-h4: 1.2rem;
+        --fs-h5: 1.1rem;
+    }
+}
+
+/* Page-specific overrides can be added here */
+.placements-page .section-title-large {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    line-height: 1.1;
+}
+
+.placements-page .section-description {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}

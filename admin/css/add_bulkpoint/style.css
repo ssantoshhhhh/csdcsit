@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(135deg, #f4f6f9, #e1e5f0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px auto;
+    max-width: calc(100% - 40px);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.table-responsive {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+}
+
+.status-winner {
+    background-color: #28a745;
+    color: white;
+}
+
+.status-runner {
+    background-color: #ffc107;
+    color: dark;
+}
+
+.status-participate {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.btn-action {
+    margin-right: 5px;
+}
+
+#dropZone {
+    border: 2px dashed #007bff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+#dropZone.dragover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.toast-container {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+}
