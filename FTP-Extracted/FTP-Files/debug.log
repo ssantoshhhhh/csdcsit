@@ -1,0 +1,75 @@
+2025-09-12 06:08:05 - POST Request:
+Array
+(
+    [upload_profile_picture] => 1
+)
+
+
+2025-09-12 06:09:48 - POST Request:
+Array
+(
+    [upload_profile_picture] => 1
+)
+
+
+2025-09-12 06:24:36 - POST Request:
+Array
+(
+    [upload_profile_picture] => 1
+)
+
+
+2025-09-12 09:15:42 - POST Request:
+Array
+(
+    [update_skills] => 1
+    [skills] => C, Python,Java, JavaScript, React JS, PHP,MySQL, Tailwind CSS, Bootstrap, MERN
+)
+
+
+2025-09-13 00:27:24 - POST Request:
+Array
+(
+    [upload_profile_picture] => 1
+)
+
+
+2025-09-13 00:27:43 - POST Request:
+Array
+(
+    [update_basic] => 1
+    [name] => SEELABOINA SANTOSH KUMAR
+    [email] => 23b91a0749@srkrec.edu.in
+)
+
+
+2025-09-13 00:30:06 - POST Request:
+Array
+(
+    [update_academic] => 1
+    [cgpa] => 
+    [summary] => 
+    [skills] => C, Python, Java, JavaScript, React JS, PHP, MySQL, Tailwind CSS, Bootstrap, MERN, MongoDB
+    [projects] => 
+    [certifications] => 
+    [achievements] => 
+    [experience] => 
+    [social_links] => 
+)
+
+
+2025-09-13 00:30:33 - POST Request:
+Array
+(
+    [update_academic] => 1
+    [cgpa] => 
+    [summary] => 
+    [skills] => C, Python, Java, JavaScript, React JS, PHP, MySQL, Tailwind CSS, Bootstrap, MERN, MongoDB
+    [projects] => 
+    [certifications] => 
+    [achievements] => 
+    [experience] => 
+    [social_links] => https://github.com/ssantoshhhhh/, https://www.linkedin.com/in/santosh-seelaboina-56b5492b8/, https://www.instagram.com/ssantoshhhhh/
+)
+
+

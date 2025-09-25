@@ -1,0 +1,87 @@
+body {
+    background-color: #007bff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.login-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+.form-container {
+    flex: 1;
+    padding: 30px;
+}
+
+.image-container {
+    flex: 1;
+    background: url('./test.svg') center center no-repeat;
+    background-size: cover;
+    border-radius: 0 15px 15px 0;
+}
+
+/* Form Styling */
+.login-card h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-card input,
+.login-card select {
+    border-radius: 30px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.login-card button {
+    border-radius: 30px;
+    padding: 10px 15px;
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.login-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-card {
+        flex-direction: column;
+    }
+    .image-container {
+        height: 200px;
+        border-radius: 15px 15px 0 0;
+    }
+}
+
+
+.toast-container {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+}

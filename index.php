@@ -2067,7 +2067,73 @@ include "./head.php";
                 transform: scale(1.1);
             }
         </style>
-    </section>
+
+    <!-- Scroll to Top Styles -->
+    <style>
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: rgba(0,0,0,0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .scroll-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .progress-circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .progress-bar {
+            transition: stroke-dashoffset 0.3s ease;
+            transform-origin: center;
+            transform: rotate(-90deg);
+        }
+
+        .scroll-to-top i {
+            color: white;
+            font-size: 20px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .scroll-to-top:hover {
+            background: rgba(0,0,0,0.9);
+            transform: scale(1.1);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .scroll-to-top.bounce {
+            animation: bounce 0.6s ease;
+        }
+    </style>
 
     <!-- Call to Action -->
     <section class="cta-section" style="padding: 80px 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center;">
@@ -2087,6 +2153,15 @@ include "./head.php";
 
 
     <?php include "footer.php"; ?>
+
+    <!-- Scroll to Top Button -->
+    <div id="scroll-to-top" class="scroll-to-top">
+        <svg class="progress-circle" width="60" height="60">
+            <circle cx="30" cy="30" r="25" stroke="#e0e0e0" stroke-width="4" fill="none"></circle>
+            <circle cx="30" cy="30" r="25" stroke="#007bff" stroke-width="4" fill="none" stroke-dasharray="157" stroke-dashoffset="157" class="progress-bar"></circle>
+        </svg>
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
     <script>
         // Add hover effects for company cards
@@ -2216,6 +2291,39 @@ include "./head.php";
         if (statsSection) {
             observer.observe(statsSection);
         }
+
+        // Scroll to Top Functionality
+        const scrollButton = document.getElementById('scroll-to-top');
+        const progressBar = document.querySelector('.progress-bar');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            const offset = 157 - (157 * scrollPercent / 100);
+            progressBar.style.strokeDashoffset = offset;
+
+            if (scrollTop > 100) {
+                scrollButton.classList.add('show');
+            } else {
+                scrollButton.classList.remove('show');
+            }
+
+            // Bottom animation - bounce when reaching bottom
+            if (scrollTop + window.innerHeight >= document.documentElement.scrollHeight - 10) {
+                scrollButton.classList.add('bounce');
+                setTimeout(() => {
+                    scrollButton.classList.remove('bounce');
+                }, 600);
+            }
+        });
+
+        scrollButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
     </script>
 </body>
 

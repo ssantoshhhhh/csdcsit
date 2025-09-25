@@ -1,0 +1,1004 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.profile-header {body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #d4edda;
+    margin-bottom: 10px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAApdJREFUSEvtV0tsU1EU/u5M5s+pQ00M1JpU24yKICbA0iKCCo+52X0A56p0pCII+wVBCQ4iCIpKKi1z0b5C0K0gT/0J598/wIqNn9gZ87t77wX478vB3e9995v33vud8f8gYCAkJCT05uXLQy85f8w6GkFqG8FqJ8G9Iag3AvQNk14JmP2k14NqJ8HdA+D5F61uB7E31pY+2pE31qY92s+c7qE1tQ/d5f8B8f8A9M+B9V67r9g1Y/s5iX4WqX1mUvrE43m3f8H4n4D474D6y0W/75K8yP857P877O4T+qT/Tz9rXN9iX46tX21y8+yW1bWqXz/P0G4n6Z07x3nve758y3/Fj1z9jX2F9oJ+zP2J+7xLwPifjf1eO99i6y/2E/y/c2zT+k753m/yOQn4i83sV8O+f+W+5m+7x8x/k8/9s6e8h9l/G6q9f9J+t17Pq7W3d6i1V3i497qK1l8u91J8PifxV5Xg/2T7V3fU+/9n7B6W9X493/y17fKq1d9N+9v22V1c14v237D6X4n2b5z/753v0vW4g925O+f+U+5p773aF0vU4m1b1q38b09iX+q/93736Z9l8P8T8R8UeF4a5m4L9/69+y1q9r/o/Q7q9i/x/xPxnwvzn/V/0vX/R/s/+X8Z858/8H5j7g7/3h5+m+2t2g8n4L+8+P9g7/43nJ+P8Z8/9E/7z38t77/P/L/W/2/V/9z6X9d5L9b/xXyn+378/i/93wf//439L9x/zPuf/8T8Z9h/r+o0930307U9m/g2/F9d/m9f71X1z4X0d6n+k+t+6/7332v4n2x97r/g7/H/x/qf5v/f/B/R/0/+F8l432T3T5F5g8k94+x,1X4H0v73pP3n533n/2z6T21432P/7/s/zPzP/W/i/S/f/S/l/N/t/1/6f13+P9F+1/T/tf+/97/5/8v0X7b9X/n/mff//f7f+3437/r/+f4n+7/v/+f4n/j/r/+P4//7+T//+P+3/X/7/7/7P+/95/899T/z/vf43+/8v8z7n+/+74n/v/z/wP4v+T//9j/t/4P+v+P//+P+D/n/n/f/e/f//8n//+H/H/if/83e48mK6kSgQAAAABJRU5ErkJggg==');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+/* For positioning the edit icon */
+}
+
+.profile-image:hover .edit-image-icon {
+display: flex;
+}
+
+.edit-image-icon {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+/* Semi-transparent black */
+color: white;
+border-radius: 50%;
+display: none;
+/* Hidden by default */
+justify-content: center;
+/* Center icon horizontally */
+align-items: center;
+/* Center icon vertically */
+cursor: pointer;
+}
+
+.edit-image-icon svg {
+width: 30px;
+height: 30px;
+}
+
+.profile-name {
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.profile-email {
+font-size: 14px;
+color: #555;
+margin-bottom: 15px;
+}
+
+.edit-button {
+background-color: #000;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 25px;
+cursor: pointer;
+font-size: 14px;
+transition: background-color 0.3s ease;
+margin-bottom: 20px;
+}
+
+.edit-button:hover {
+background-color: #333;
+}
+
+.section-title {
+font-size: 16px;
+font-weight: bold;
+color: #333;
+margin-bottom: 10px;
+}
+
+.list-item {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 12px 15px;
+background-color: #f0f0f0;
+border-radius: 8px;
+margin-bottom: 12px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.list-item:hover {
+background-color: #e0e0e0;
+}
+
+.list-item i {
+margin-right: 15px;
+font-size: 20px;
+color: #555;
+}
+
+.list-item .item-text {
+flex-grow: 1;
+font-size: 16px;
+color: #333;
+}
+
+.list-item .arrow {
+font-size: 20px;
+color: #777;
+}
+
+.switch-container {
+display: flex;
+align-items: center;
+}
+
+.switch {
+position: relative;
+display: inline-block;
+width: 45px;
+height: 22px;
+}
+
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+transition: .4s;
+border-radius: 22px;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 18px;
+width: 18px;
+left: 2px;
+bottom: 2px;
+background-color: white;
+transition: .4s;
+border-radius: 50%;
+}
+
+input:checked + .slider {
+background-color: #2196F3;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+transform: translateX(23px);
+}
+
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+.logout-button {
+display: flex;
+align-items: center;
+color: #e74c3c;
+padding: 12px 15px;
+background-color: #f0f0f0;
+border-radius: 8px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+border: none;
+width: 100%;
+justify-content: flex-start;
+margin-bottom: 20px;
+}
+
+.logout-button:hover {
+background-color: #e0e0e0;
+}
+
+.logout-button i {
+margin-right: 15px;
+font-size: 20px;
+color: #e74c3c;
+}
+
+.stores-count {
+background-color: #2ecc71;
+color: #fff;
+border-radius: 50%;
+padding: 4px 8px;
+font-size: 12px;
+margin-left: 8px;
+}
+
+.icon {
+font-size: 20px;
+margin-right: 10px;
+color: #555;
+}
+
+.notification-switch {
+position: relative;
+display: inline-block;
+width: 45px;
+height: 22px;
+}
+
+.notification-switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.notification-switch .slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+transition: .4s;
+border-radius: 22px;
+}
+
+.notification-switch .slider:before {
+position: absolute;
+content: "";
+height: 18px;
+width: 18px;
+left: 2px;
+bottom: 2px;
+background-color: white;
+transition: .4s;
+border-radius: 50%;
+}
+
+.notification-switch input:checked + .slider {
+background-color: #336600;
+}
+
+.notification-switch input:focus + .slider {
+box-shadow: 0 0 1px #4CAF50;
+}
+
+.notification-switch input:checked + .slider:before {
+transform: translateX(23px);
+}
+
+.notification-switch .slider.round {
+border-radius: 34px;
+}
+
+.notification-switch .slider.round:before {
+border-radius: 50%;
+}
+
+#notifications .arrow {
+display: none;
+}
+
+/* Black space styling - added */
+.black-space {
+background-color: rgb(255, 255, 255);
+height: 25px;
+/* Adjust the height as needed */
+margin-bottom: 10px;
+/* Add spacing if needed */
+}
+
+/* The Modal (background) */
+.modal {
+display: none;
+/* Hidden by default */
+position: fixed;
+/* Stay in place */
+z-index: 1;
+/* Sit on top */
+left: 0;
+top: 0;
+width: 100%;
+/* Full width */
+height: 100%;
+/* Full height */
+overflow: auto;
+/* Enable scroll if needed */
+background-color: rgba(0, 0, 0, 0.4);
+/* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto;
+/* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+/* Adjust width as needed */
+max-width: 350px;
+/* Adjust max-width as needed */
+border-radius: 10px;
+box-sizing: border-box;
+}
+
+/* Style the Close Button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* Styles for the confirmation dialog */
+.confirmation-dialog {
+display: none;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+z-index: 2;
+text-align: center;
+}
+
+.confirmation-dialog p {
+margin-bottom: 20px;
+}
+
+.confirmation-dialog button {
+padding: 10px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+}
+
+.confirmation-dialog button.close-button {
+background-color: #f0f0f0;
+color: #333;
+margin-right: 10px;
+}
+
+.confirmation-dialog button.confirm-button {
+background-color: #007bff;
+color: white;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+
+.form-group label {
+display: block;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="file"],
+.form-group input[type="password"] {
+width: 100%;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+button[type="submit"] {
+background-color: #4CAF50;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+display: block;
+margin: 20px auto;
+}
+
+button[type="submit"]:hover {
+background-color: #45a049;
+}
+
+.hidden {
+display: none;
+}
+
+.edit-profile-form-container {
+position: relative;
+}
+
+.cancel-edit-icon {
+position: absolute;
+top: 5px;
+right: 5px;
+cursor: pointer;
+font-size: 20px;
+color: #888;
+}
+
+/* Added for Pin Code Modal */
+#pinCodeForm .error-message {
+color: red;
+font-size: 0.8em;
+margin-top: 5px;
+}
+
+#pinCodeForm .strength-indicator {
+margin-top: 5px;
+font-size: 0.8em;
+}
+
+#pinCodeForm .strength-indicator .strength-bar {
+height: 8px;
+border-radius: 4px;
+margin-top: 3px;
+}
+
+#pinCodeForm .strength-indicator .weak {
+background-color: red;
+}
+
+#pinCodeForm .strength-indicator .medium {
+background-color: orange;
+}
+
+#pinCodeForm .strength-indicator .strong {
+background-color: green;
+}
+
+.show-password-container {
+display: flex;
+align-items: center;
+margin-top: 10px;
+/* Adjust spacing as needed */
+}
+
+.show-password-container label {
+margin-left: 5px;
+font-weight: normal;
+/* Remove bolding if desired */
+}
+
+/* Styles to ensure toasts are visible above other elements */
+.toast-container {
+z-index: 1060;
+/* Higher than confirmation dialog */
+}
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #d4edda;
+    margin-bottom: 10px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAApdJREFUSEvtV0tsU1EU/u5M5s+pQ00M1JpU24yKICbA0iKCCo+52X0A56p0pCII+wVBCQ4iCIpKKi1z0b5C0K0gT/0J598/wIqNn9gZ87t77wX478vB3e9995v33vud8f8gYCAkJCT05uXLQy85f8w6GkFqG8FqJ8G9Iag3AvQNk14JmP2k14NqJ8HdA+D5F61uB7E31pY+2pE31qY92s+c7qE1tQ/d5f8B8f8A9M+B9V67r9g1Y/s5iX4WqX1mUvrE43m3f8H4n4D474D6y0W/75K8yP857P877O4T+qT/Tz9rXN9iX46tX21y8+yW1bWqXz/P0G4n6Z07x3nve758y3/Fj1z9jX2F9oJ+zP2J+7xLwPifjf1eO99i6y/2E/y/c2zT+k753m/yOQn4i83sV8O+f+W+5m+7x8x/k8/9s6e8h9l/G6q9f9J+t17Pq7W3d6i1V3i497qK1l8u91J8PifxV5Xg/2T7V3fU+/9n7B6W9X493/y17fKq1d9N+9v22V1c14v237D6X4n2b5z/753v0vW4g925O+f+U+5p773aF0vU4m1b1q38b09iX+q/93736Z9l8P8T8R8UeF4a5m4L9/69+y1q9r/o/Q7q9i/x/xPxnwvzn/V/0vX/R/s/+X8Z858/8H5j7g7/3h5+m+2t2g8n4L+8+P9g7/43nJ+P8Z8/9E/7z38t77/P/L/W/2/V/9z6X9d5L9b/xXyn+378/i/93wf//439L9x/zPuf/8T8Z9h/r+o0930307U9m/g2/F9d/m9f71X1z4X0d6n+k+t+6/7332v4n2x97r/g7/H/x/qf5v/f/B/R/0/+F8l432T3T5F5g8k94+x,1X4H0v73pP3n533n/2z6T21432P/7/s/zPzP/W/i/S/f/S/l/N/t/1/6f13+P9F+1/T/tf+/97/5/8v0X7b9X/n/mff//f7f+3437/r/+f4n+7/v/+f4n/j/r/+P4//7+T//+P+3/X/7/7/7P+/95/899T/z/vf43+/8v8z7n+/+74n/v/z/wP4v+T//9j/t/4P+v+P//+P+D/n/n/f/e/f//8n//+H/H/if/83e48mK6kSgQAAAABJRU5ErkJggg==');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+/* For positioning the edit icon */
+}
+
+.profile-image:hover .edit-image-icon {
+display: flex;
+}
+
+.edit-image-icon {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+/* Semi-transparent black */
+color: white;
+border-radius: 50%;
+display: none;
+/* Hidden by default */
+justify-content: center;
+/* Center icon horizontally */
+align-items: center;
+/* Center icon vertically */
+cursor: pointer;
+}
+
+.edit-image-icon svg {
+width: 30px;
+height: 30px;
+}
+
+.profile-name {
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.profile-email {
+font-size: 14px;
+color: #555;
+margin-bottom: 15px;
+}
+
+.edit-button {
+background-color: #000;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 25px;
+cursor: pointer;
+font-size: 14px;
+transition: background-color 0.3s ease;
+margin-bottom: 20px;
+}
+
+.edit-button:hover {
+background-color: #333;
+}
+
+.section-title {
+font-size: 16px;
+font-weight: bold;
+color: #333;
+margin-bottom: 10px;
+}
+
+.list-item {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 12px 15px;
+background-color: #f0f0f0;
+border-radius: 8px;
+margin-bottom: 12px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.list-item:hover {
+background-color: #e0e0e0;
+}
+
+.list-item i {
+margin-right: 15px;
+font-size: 20px;
+color: #555;
+}
+
+.list-item .item-text {
+flex-grow: 1;
+font-size: 16px;
+color: #333;
+}
+
+.list-item .arrow {
+font-size: 20px;
+color: #777;
+}
+
+.switch-container {
+display: flex;
+align-items: center;
+}
+
+.switch {
+position: relative;
+display: inline-block;
+width: 45px;
+height: 22px;
+}
+
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+transition: .4s;
+border-radius: 22px;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 18px;
+width: 18px;
+left: 2px;
+bottom: 2px;
+background-color: white;
+transition: .4s;
+border-radius: 50%;
+}
+
+input:checked + .slider {
+background-color: #2196F3;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+transform: translateX(23px);
+}
+
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+.logout-button {
+display: flex;
+align-items: center;
+color: #e74c3c;
+padding: 12px 15px;
+background-color: #f0f0f0;
+border-radius: 8px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+border: none;
+width: 100%;
+justify-content: flex-start;
+margin-bottom: 20px;
+}
+
+.logout-button:hover {
+background-color: #e0e0e0;
+}
+
+.logout-button i {
+margin-right: 15px;
+font-size: 20px;
+color: #e74c3c;
+}
+
+.stores-count {
+background-color: #2ecc71;
+color: #fff;
+border-radius: 50%;
+padding: 4px 8px;
+font-size: 12px;
+margin-left: 8px;
+}
+
+.icon {
+font-size: 20px;
+margin-right: 10px;
+color: #555;
+}
+
+.notification-switch {
+position: relative;
+display: inline-block;
+width: 45px;
+height: 22px;
+}
+
+.notification-switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.notification-switch .slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+transition: .4s;
+border-radius: 22px;
+}
+
+.notification-switch .slider:before {
+position: absolute;
+content: "";
+height: 18px;
+width: 18px;
+left: 2px;
+bottom: 2px;
+background-color: white;
+transition: .4s;
+border-radius: 50%;
+}
+
+.notification-switch input:checked + .slider {
+background-color: #336600;
+}
+
+.notification-switch input:focus + .slider {
+box-shadow: 0 0 1px #4CAF50;
+}
+
+.notification-switch input:checked + .slider:before {
+transform: translateX(23px);
+}
+
+.notification-switch .slider.round {
+border-radius: 34px;
+}
+
+.notification-switch .slider.round:before {
+border-radius: 50%;
+}
+
+#notifications .arrow {
+display: none;
+}
+
+/* Black space styling - added */
+.black-space {
+background-color: rgb(255, 255, 255);
+height: 25px;
+/* Adjust the height as needed */
+margin-bottom: 10px;
+/* Add spacing if needed */
+}
+
+/* The Modal (background) */
+.modal {
+display: none;
+/* Hidden by default */
+position: fixed;
+/* Stay in place */
+z-index: 1;
+/* Sit on top */
+left: 0;
+top: 0;
+width: 100%;
+/* Full width */
+height: 100%;
+/* Full height */
+overflow: auto;
+/* Enable scroll if needed */
+background-color: rgba(0, 0, 0, 0.4);
+/* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto;
+/* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+/* Adjust width as needed */
+max-width: 350px;
+/* Adjust max-width as needed */
+border-radius: 10px;
+box-sizing: border-box;
+}
+
+/* Style the Close Button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* Styles for the confirmation dialog */
+.confirmation-dialog {
+display: none;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+z-index: 2;
+text-align: center;
+}
+
+.confirmation-dialog p {
+margin-bottom: 20px;
+}
+
+.confirmation-dialog button {
+padding: 10px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+}
+
+.confirmation-dialog button.close-button {
+background-color: #f0f0f0;
+color: #333;
+margin-right: 10px;
+}
+
+.confirmation-dialog button.confirm-button {
+background-color: #007bff;
+color: white;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+
+.form-group label {
+display: block;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="file"],
+.form-group input[type="password"] {
+width: 100%;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+button[type="submit"] {
+background-color: #4CAF50;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+display: block;
+margin: 20px auto;
+}
+
+button[type="submit"]:hover {
+background-color: #45a049;
+}
+
+.hidden {
+display: none;
+}
+
+.edit-profile-form-container {
+position: relative;
+}
+
+.cancel-edit-icon {
+position: absolute;
+top: 5px;
+right: 5px;
+cursor: pointer;
+font-size: 20px;
+color: #888;
+}
+
+/* Added for Pin Code Modal */
+#pinCodeForm .error-message {
+color: red;
+font-size: 0.8em;
+margin-top: 5px;
+}
+
+#pinCodeForm .strength-indicator {
+margin-top: 5px;
+font-size: 0.8em;
+}
+
+#pinCodeForm .strength-indicator .strength-bar {
+height: 8px;
+border-radius: 4px;
+margin-top: 3px;
+}
+
+#pinCodeForm .strength-indicator .weak {
+background-color: red;
+}
+
+#pinCodeForm .strength-indicator .medium {
+background-color: orange;
+}
+
+#pinCodeForm .strength-indicator .strong {
+background-color: green;
+}
+
+.show-password-container {
+display: flex;
+align-items: center;
+margin-top: 10px;
+/* Adjust spacing as needed */
+}
+
+.show-password-container label {
+margin-left: 5px;
+font-weight: normal;
+/* Remove bolding if desired */
+}
+
+/* Styles to ensure toasts are visible above other elements */
+.toast-container {
+z-index: 1060;
+/* Higher than confirmation dialog */
+}
+

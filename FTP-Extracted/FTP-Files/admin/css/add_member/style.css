@@ -1,0 +1,43 @@
+:root {
+    --primary-gradient: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    --secondary-gradient: linear-gradient(135deg, #f4f6f9, #e1e5f0);
+}
+body {
+    background: var(--secondary-gradient);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.member-container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-top: 20px;
+}
+.form-control, .form-select {
+    border-radius: 10px;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+.form-control:focus, .form-select:focus {
+    box-shadow: 0 0 15px rgba(37, 117, 252, 0.2);
+    border-color: #2575fc;
+}
+.btn-primary {
+    background: green;
+    border: none;
+    transition: transform 0.3s ease;
+}
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+.tooltip-info {
+    cursor: help;
+    color: #2575fc;
+}
+
+.toast-container {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+}
